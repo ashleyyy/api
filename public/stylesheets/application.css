@@ -1,0 +1,28 @@
+#photo.show {
+ opacity: 1; 
+}
+
+#photo {
+  background-color: black;
+  margin: auto;
+  max-width: 80%;
+  opacity: 0;
+  transition: all 1s linear;
+}
+
+body {
+  background-color: black
+}
+
+input {
+    background: transparent;
+    border: none;
+}
+
+img {
+  margin: auto;
+}
+
+h1  {
+  color: white;
+}
