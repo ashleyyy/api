@@ -4,12 +4,14 @@ $(document).ready(function() {
 
     timeDoubt: function(index, photo) {
       setTimeout(function() {
-        var img = "<img src ="+photo.images.standard_resolution.url+">";
+        var img = "<img src ="+photo.images.standard_resolution.url+" class='img-responsive center-block'>";
         $('#photo').html(img).addClass('show');
         console.log(img);
+
         setTimeout(function() {
           $('#photo').removeClass('show');
         }, 2000);
+
       }, 2900*index);
     },
 
