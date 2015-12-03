@@ -5,7 +5,7 @@ end
 get '/photos' do 
   require 'open-uri'
   if params[:tag] != ""
-    tag = params[:tag]
+    tag = params[:tag].delete(' ')
   else
     tag = 'pancake'
   end
